@@ -8,7 +8,6 @@ export interface Props {
 export default function GetStarted({ enableInspectVSCode }: Props) {
   return (
     <section class="pt-20 pb-32">
-      
     </section>
   );
 }

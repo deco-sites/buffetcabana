@@ -58,7 +58,7 @@ export default function Header({ menuLeftItems, logo, menuRightItems }: Props) {
         <Image
           class="self-center mx-14"
           src={logo.src}
-          alt={logo.src}
+          alt={logo.alt}
           width={200}
           height={94}
         />

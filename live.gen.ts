@@ -6,10 +6,14 @@ import { DecoManifest } from "$live/types.ts";
 import * as $0 from "./functions/LoadGitHubRaw.ts";
 import * as $$$$0 from "./routes/_app.tsx";
 import * as $$$$1 from "./routes/styles.css.ts";
-import * as $$$$$$$$0 from "./sections/DesignSystem.tsx";
-import * as $$$$$$$$1 from "./sections/Head.tsx";
-import * as $$$$$$$$2 from "./sections/Header.tsx";
-import * as $$$$$$$$3 from "./sections/GetStarted.tsx";
+import * as $$$$$$$$0 from "./sections/Head.tsx";
+import * as $$$$$$$$1 from "./sections/Banner.tsx";
+import * as $$$$$$$$2 from "./sections/GetStarted.tsx";
+import * as $$$$$$$$3 from "./sections/DesignSystem.tsx";
+import * as $$$$$$$$4 from "./sections/Header.tsx";
+import * as $$$$$$$$5 from "./sections/ImageGallery.tsx";
+import * as $$$$$$$$6 from "./sections/RichText.tsx";
+import * as $live_workflows from "$live/routes/live/workflows/run.ts";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -43,6 +47,7 @@ import * as i2$$$$$$$$2 from "$live/matchers/MatchDate.ts";
 import * as i2$$$$$$$$3 from "$live/matchers/MatchDevice.ts";
 import * as i2$$$$$$$$4 from "$live/matchers/MatchEnvironment.ts";
 import * as i2$$$$$$$$5 from "$live/matchers/MatchHost.ts";
+import * as i1$$$$$6 from "$live/matchers/MatchLocation.ts";
 import * as i2$$$$$$$$6 from "$live/matchers/MatchMulti.ts";
 import * as i2$$$$$$$$7 from "$live/matchers/MatchRandom.ts";
 import * as i2$$$$$$$$8 from "$live/matchers/MatchSite.ts";
@@ -50,11 +55,10 @@ import * as i2$$$$$$$$9 from "$live/matchers/MatchUserAgent.ts";
 import * as i2$$$$$$$$$0 from "$live/flags/audience.ts";
 import * as i2$$$$$$$$$1 from "$live/flags/everyone.ts";
 import * as i2$$$$$$$$$2 from "$live/flags/flag.ts";
-import * as i1$$$$$$3 from "$live/flags/multivariate.ts";
+import * as i2$$$$$$$$$3 from "$live/flags/multivariate.ts";
 import * as i2$$$$$$0 from "$live/actions/workflows/cancel.ts";
-import * as i2$$$$$$1 from "$live/actions/workflows/run.ts";
-import * as i2$$$$$$2 from "$live/actions/workflows/signal.ts";
-import * as i2$$$$$$3 from "$live/actions/workflows/start.ts";
+import * as i2$$$$$$1 from "$live/actions/workflows/signal.ts";
+import * as i2$$$$$$2 from "$live/actions/workflows/start.ts";
 import * as i2$0 from "deco-sites/std/functions/butterCMSAds.ts";
 import * as i2$1 from "deco-sites/std/functions/butterCMSBrands.ts";
 import * as i2$2 from "deco-sites/std/functions/butterCMSCategories.ts";
@@ -117,6 +121,7 @@ import * as i2$$$$$12 from "deco-sites/std/sections/SEO.tsx";
 import * as i2$$$$$13 from "deco-sites/std/sections/SEOPDP.tsx";
 import * as i2$$$$$14 from "deco-sites/std/sections/SEOPLP.tsx";
 import * as i2$$$$$15 from "deco-sites/std/sections/VTEXPortalDataLayerCompatibility.tsx";
+import * as i2$$$$$$3 from "deco-sites/std/actions/vtex/analytics/sendEvent.ts";
 import * as i2$$$$$$4 from "deco-sites/std/actions/vtex/cart/addItems.ts";
 import * as i2$$$$$$5 from "deco-sites/std/actions/vtex/cart/getInstallment.ts";
 import * as i2$$$$$$6 from "deco-sites/std/actions/vtex/cart/removeItemAttachment.ts";
@@ -179,6 +184,7 @@ const manifest = {
     "./routes/live/previews/index.tsx": $live_previews_index,
     "./routes/live/release.ts": $live_release,
     "./routes/live/workbench.ts": $live_workbench,
+    "./routes/live/workflows/run.ts": $live_workflows,
     "./routes/styles.css.ts": $$$$1,
   },
   "sections": {
@@ -187,10 +193,13 @@ const manifest = {
     "$live/sections/PageInclude.tsx": i2$$$$$2,
     "$live/sections/Slot.tsx": i2$$$$$3,
     "$live/sections/UseSlot.tsx": i2$$$$$4,
-    "deco-sites/buffetcabana/sections/DesignSystem.tsx": $$$$$$$$0,
-    "deco-sites/buffetcabana/sections/GetStarted.tsx": $$$$$$$$3,
-    "deco-sites/buffetcabana/sections/Head.tsx": $$$$$$$$1,
-    "deco-sites/buffetcabana/sections/Header.tsx": $$$$$$$$2,
+    "deco-sites/buffetcabana/sections/Banner.tsx": $$$$$$$$1,
+    "deco-sites/buffetcabana/sections/DesignSystem.tsx": $$$$$$$$3,
+    "deco-sites/buffetcabana/sections/GetStarted.tsx": $$$$$$$$2,
+    "deco-sites/buffetcabana/sections/Head.tsx": $$$$$$$$0,
+    "deco-sites/buffetcabana/sections/Header.tsx": $$$$$$$$4,
+    "deco-sites/buffetcabana/sections/ImageGallery.tsx": $$$$$$$$5,
+    "deco-sites/buffetcabana/sections/RichText.tsx": $$$$$$$$6,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$$5,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$$6,
     "deco-sites/std/sections/configNuvemShop.tsx": i2$$$$$7,
@@ -247,6 +256,7 @@ const manifest = {
     "$live/matchers/MatchDevice.ts": i2$$$$$$$$3,
     "$live/matchers/MatchEnvironment.ts": i2$$$$$$$$4,
     "$live/matchers/MatchHost.ts": i2$$$$$$$$5,
+    "$live/matchers/MatchLocation.ts": i1$$$$$6,
     "$live/matchers/MatchMulti.ts": i2$$$$$$$$6,
     "$live/matchers/MatchRandom.ts": i2$$$$$$$$7,
     "$live/matchers/MatchSite.ts": i2$$$$$$$$8,
@@ -256,13 +266,13 @@ const manifest = {
     "$live/flags/audience.ts": i2$$$$$$$$$0,
     "$live/flags/everyone.ts": i2$$$$$$$$$1,
     "$live/flags/flag.ts": i2$$$$$$$$$2,
-    "$live/flags/multivariate.ts": i1$$$$$$3,
+    "$live/flags/multivariate.ts": i2$$$$$$$$$3,
   },
   "actions": {
     "$live/actions/workflows/cancel.ts": i2$$$$$$0,
-    "$live/actions/workflows/run.ts": i2$$$$$$1,
-    "$live/actions/workflows/signal.ts": i2$$$$$$2,
-    "$live/actions/workflows/start.ts": i2$$$$$$3,
+    "$live/actions/workflows/signal.ts": i2$$$$$$1,
+    "$live/actions/workflows/start.ts": i2$$$$$$2,
+    "deco-sites/std/actions/vtex/analytics/sendEvent.ts": i2$$$$$$3,
     "deco-sites/std/actions/vtex/cart/addItems.ts": i2$$$$$$4,
     "deco-sites/std/actions/vtex/cart/getInstallment.ts": i2$$$$$$5,
     "deco-sites/std/actions/vtex/cart/removeItemAttachment.ts": i2$$$$$$6,
