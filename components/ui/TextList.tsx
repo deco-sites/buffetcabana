@@ -10,7 +10,7 @@ export default function TextList({ texts }: Props) {
       {texts.map((text) => {
         <li class="flex">
           <Icon id="WhatsApp" strokeWidth={0.1} size={28} class="mr-1" />
-          <p class="text-xl font-bold color-[#303030]">{text}</p>  
+          <p class="text-xl font-bold color-[#303030]">{text}</p>
         </li>;
       })}
     </ul>

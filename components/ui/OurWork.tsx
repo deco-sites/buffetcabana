@@ -21,7 +21,11 @@ export default function OurWork({ logo, texts }: Props) {
         height={194}
       />
       {texts.map((text) => {
-        <p class="absolute top-0 left-0" dangerouslySetInnerHTML={{ __html: text }}></p>;
+        <p
+          class="absolute top-0 left-0"
+          dangerouslySetInnerHTML={{ __html: text }}
+        >
+        </p>;
       })}
     </div>
   );

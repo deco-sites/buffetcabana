@@ -19,7 +19,7 @@ export interface Props {
 export default function Testimonials({ testimonals }: Props) {
   return (
     <ul class="flex md:flex-row mr-14 container m-auto">
-      {testimonals.map(({photo,name, occupation, testimonial}) => (
+      {testimonals.map(({ photo, name, occupation, testimonial }) => (
         <li class="flex flex-col border border-[#D9D9D9] p-6">
           <div class="flex mb-5">
             <Image
