@@ -1,1 +1,1 @@
-export { default } from '$store/components/ui/Instafeed.tsx'
+export { default } from "$store/components/ui/Instafeed.tsx";

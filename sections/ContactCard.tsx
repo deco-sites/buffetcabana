@@ -1,1 +1,1 @@
-export { default } from '$store/components/ui/ContactCard.tsx'
+export { default } from "$store/components/ui/ContactCard.tsx";

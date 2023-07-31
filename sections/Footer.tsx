@@ -1,1 +1,1 @@
-export { default } from '$store/components/layout/Footer.tsx'
+export { default } from "$store/components/layout/Footer.tsx";
