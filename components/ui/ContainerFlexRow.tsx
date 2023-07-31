@@ -6,7 +6,9 @@ export interface Props {
   className?: string;
 }
 
-export default function ContainerFlexRow({ leftContent, rightContent, className }: Props) {
+export default function ContainerFlexRow(
+  { leftContent, rightContent, className }: Props,
+) {
   return (
     <div class={`flex md:flex-row ${className && className}`}>
       {leftContent}
