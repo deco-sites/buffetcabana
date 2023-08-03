@@ -18,9 +18,7 @@ export interface Props {
   pacotes: {
     title: string;
     list: links[];
-  };
-  section: Section;
-}
+  };}
 
 export interface links {
   text: string;
@@ -33,7 +31,6 @@ export default function Footer({
   institucional,
   cardapios,
   pacotes,
-  section,
 }: Props) {
   const { title: titleInstitucional, list: listInstitucional } = institucional;
   const { title: titleCardapios, list: listCardapios } = cardapios;
@@ -41,7 +38,6 @@ export default function Footer({
 
   return (
     <footer class="flex flex-col md:flex-row justify-between">
-      {section}
       {logo && (
         <Image
           class="self-center mx-14"

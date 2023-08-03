@@ -6,13 +6,25 @@ import { DecoManifest } from "$live/types.ts";
 import * as $0 from "./functions/LoadGitHubRaw.ts";
 import * as $$$$0 from "./routes/_app.tsx";
 import * as $$$$1 from "./routes/styles.css.ts";
+import * as $$$$$0 from "./islands/tools/SliderJS.tsx";
 import * as $$$$$$$$0 from "./sections/Head.tsx";
-import * as $$$$$$$$1 from "./sections/Banner.tsx";
-import * as $$$$$$$$2 from "./sections/GetStarted.tsx";
-import * as $$$$$$$$3 from "./sections/DesignSystem.tsx";
-import * as $$$$$$$$4 from "./sections/Header.tsx";
-import * as $$$$$$$$5 from "./sections/ImageGallery.tsx";
-import * as $$$$$$$$6 from "./sections/RichText.tsx";
+import * as $$$$$$$$1 from "./sections/ContactCard.tsx";
+import * as $$$$$$$$2 from "./sections/Banner.tsx";
+import * as $$$$$$$$3 from "./sections/BannerText.tsx";
+import * as $$$$$$$$4 from "./sections/GetStarted.tsx";
+import * as $$$$$$$$5 from "./sections/Pacotes.tsx";
+import * as $$$$$$$$6 from "./sections/OurWork.tsx";
+import * as $$$$$$$$7 from "./sections/ContainerFlexRow.tsx";
+import * as $$$$$$$$8 from "./sections/TextList.tsx";
+import * as $$$$$$$$9 from "./sections/Footer.tsx";
+import * as $$$$$$$$10 from "./sections/DesignSystem.tsx";
+import * as $$$$$$$$11 from "./sections/Faq.tsx";
+import * as $$$$$$$$12 from "./sections/Form.tsx";
+import * as $$$$$$$$13 from "./sections/Header.tsx";
+import * as $$$$$$$$14 from "./sections/ImageGallery.tsx";
+import * as $$$$$$$$15 from "./sections/RichText.tsx";
+import * as $$$$$$$$16 from "./sections/Testmonials.tsx";
+import * as $$$$$$$$17 from "./sections/Instafeed.tsx";
 import * as $live_workflows from "$live/routes/live/workflows/run.ts";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
@@ -187,19 +199,33 @@ const manifest = {
     "./routes/live/workflows/run.ts": $live_workflows,
     "./routes/styles.css.ts": $$$$1,
   },
+  "islands": {
+    "./islands/tools/SliderJS.tsx": $$$$$0,
+  },
   "sections": {
     "$live/sections/Conditional_Beta.tsx": i2$$$$$0,
     "$live/sections/EmptySection.tsx": i2$$$$$1,
     "$live/sections/PageInclude.tsx": i2$$$$$2,
     "$live/sections/Slot.tsx": i2$$$$$3,
     "$live/sections/UseSlot.tsx": i2$$$$$4,
-    "deco-sites/buffetcabana/sections/Banner.tsx": $$$$$$$$1,
-    "deco-sites/buffetcabana/sections/DesignSystem.tsx": $$$$$$$$3,
-    "deco-sites/buffetcabana/sections/GetStarted.tsx": $$$$$$$$2,
+    "deco-sites/buffetcabana/sections/Banner.tsx": $$$$$$$$2,
+    "deco-sites/buffetcabana/sections/BannerText.tsx": $$$$$$$$3,
+    "deco-sites/buffetcabana/sections/ContactCard.tsx": $$$$$$$$1,
+    "deco-sites/buffetcabana/sections/ContainerFlexRow.tsx": $$$$$$$$7,
+    "deco-sites/buffetcabana/sections/DesignSystem.tsx": $$$$$$$$10,
+    "deco-sites/buffetcabana/sections/Faq.tsx": $$$$$$$$11,
+    "deco-sites/buffetcabana/sections/Footer.tsx": $$$$$$$$9,
+    "deco-sites/buffetcabana/sections/Form.tsx": $$$$$$$$12,
+    "deco-sites/buffetcabana/sections/GetStarted.tsx": $$$$$$$$4,
     "deco-sites/buffetcabana/sections/Head.tsx": $$$$$$$$0,
-    "deco-sites/buffetcabana/sections/Header.tsx": $$$$$$$$4,
-    "deco-sites/buffetcabana/sections/ImageGallery.tsx": $$$$$$$$5,
-    "deco-sites/buffetcabana/sections/RichText.tsx": $$$$$$$$6,
+    "deco-sites/buffetcabana/sections/Header.tsx": $$$$$$$$13,
+    "deco-sites/buffetcabana/sections/ImageGallery.tsx": $$$$$$$$14,
+    "deco-sites/buffetcabana/sections/Instafeed.tsx": $$$$$$$$17,
+    "deco-sites/buffetcabana/sections/OurWork.tsx": $$$$$$$$6,
+    "deco-sites/buffetcabana/sections/Pacotes.tsx": $$$$$$$$5,
+    "deco-sites/buffetcabana/sections/RichText.tsx": $$$$$$$$15,
+    "deco-sites/buffetcabana/sections/Testmonials.tsx": $$$$$$$$16,
+    "deco-sites/buffetcabana/sections/TextList.tsx": $$$$$$$$8,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$$5,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$$6,
     "deco-sites/std/sections/configNuvemShop.tsx": i2$$$$$7,
@@ -298,7 +324,6 @@ const manifest = {
     "deco-sites/std/accounts/vtex.ts": i2$$4,
     "deco-sites/std/accounts/yourViews.ts": i2$$5,
   },
-  "islands": {},
   "baseUrl": import.meta.url,
 };
 

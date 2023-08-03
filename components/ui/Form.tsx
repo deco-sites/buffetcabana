@@ -5,8 +5,9 @@ import Button from "$store/components/ui/Button.tsx";
 import Input from "$store/components/ui/Input.tsx";
 import RichText from "$store/components/seo/RichText.tsx";
 import type { HTML } from "deco-sites/std/components/types.ts";
-import { isSection, Section } from "$live/blocks/section.ts";
+import { Section } from "$live/blocks/section.ts";
 import { useRef } from "preact/hooks";
+import { renderSection } from "$live/pages/LivePage.tsx";
 
 const subscribe = Runtime.create(
   "deco-sites/std/actions/vtex/newsletter/subscribe.ts",
@@ -50,7 +51,7 @@ export default function Form({ title, section }: Props) {
   };
 
   return (
-    <div class="flex flex-col container m-auto ">
+    <div class="flex flex-col container m-auto max-w-7xl ">
       <RichText textSeo={title} />
       <div class="flex flex-row justify-between">
         <form onSubmit={handleSubmit} class="flex flex-col">
@@ -127,7 +128,9 @@ export default function Form({ title, section }: Props) {
             Enviar
           </Button>
         </form>
-        <div class="block">{section}</div>
+        <div class="block">
+        {renderSection(section, 500)}
+        </div>
       </div>
     </div>
   );

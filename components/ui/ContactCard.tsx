@@ -14,7 +14,7 @@ export interface Props {
 
 export default function ContactCard({ phone, whats, email }: Props) {
   return (
-    <div class="flex flex-col p-12 border border-[#66AF27] bg-white container m-auto">
+    <div class="flex flex-col p-12 border border-[#66AF27] bg-white container m-auto max-w-7xl">
       <div class="flex flex-col">
         <Icon id="WhatsApp" strokeWidth={0.1} size={30} class="" />
         <p class="text-xl color-[#303030]">Telefone</p>

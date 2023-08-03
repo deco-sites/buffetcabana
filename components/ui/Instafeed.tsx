@@ -13,7 +13,7 @@ export interface Posts {
 
 export default function Instafeed({ images }: Props) {
   return (
-    <ul class="flex flex-row justify-center container m-auto">
+    <ul class="flex flex-row justify-center container m-auto max-w-7xl">
       {images.map((image) => (
         <a class="block mr-5" href={image.href}>
           <Image

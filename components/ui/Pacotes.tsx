@@ -15,7 +15,7 @@ export default function Pacotes({ pacotes }: Props) {
     "#303030",
   ];
   return (
-    <ul class="flex flex-wrap flex-row justify-around container m-auto items-center">
+    <ul class="flex flex-wrap flex-row justify-around container m-auto items-center max-w-7xl">
       {pacotes?.map((pacote) => {
         const index: number = Math.floor(Math.random() * 9);
         return (

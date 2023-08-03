@@ -10,7 +10,7 @@ export default function ContainerFlexRow(
   { leftContent, rightContent, className }: Props,
 ) {
   return (
-    <div class={`flex md:flex-row ${className && className}`}>
+    <div class={`flex md:flex-row ${className && className} container m-auto max-w-7xl`}>
       {leftContent}
       {rightContent}
     </div>

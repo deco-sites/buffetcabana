@@ -31,7 +31,7 @@ export default function Input({
         id={id}
         type={type}
         ref={inputRef}
-        class={`w-full border border-color-[#151515] rounded-3xl py-3 px-4 ${
+        class={`w-full border border-color-[#151515] rounded-3xl py-3 px-4 h-11 ${
           className && className
         }`}
         placeholder={placeholder}

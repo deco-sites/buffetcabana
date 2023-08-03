@@ -12,7 +12,7 @@ export interface Props {
 
 export default function OurWork({ logo, texts }: Props) {
   return (
-    <div class="relative h-[1000px] container m-auto">
+    <div class="relative h-[1000px] container m-auto max-w-7xl">
       <Image
         class="self-center"
         src={logo.src}

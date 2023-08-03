@@ -6,7 +6,7 @@ export interface Props {
 
 export default function TextList({ texts }: Props) {
   return (
-    <ul class="flex flex-col flex-wrap max-h-80 container m-auto">
+    <ul class="flex flex-col flex-wrap max-h-80 container m-auto max-w-7xl">
       {texts.map((text) => {
         <li class="flex">
           <Icon id="WhatsApp" strokeWidth={0.1} size={28} class="mr-1" />
