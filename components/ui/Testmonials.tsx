@@ -44,4 +44,3 @@ export default function Testimonials({ title, testimonals }: Props) {
     </div>
   );
 }
-

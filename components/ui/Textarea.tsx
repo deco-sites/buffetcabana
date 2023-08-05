@@ -1,24 +1,24 @@
 import { Ref, useRef } from "preact/hooks";
 
-export interface InputProps {
+export interface TextareaProps {
   id: string;
   placeholder: string;
   label: string;
-  inputRef: Ref<HTMLInputElement>;
+  textAreaRef: Ref<HTMLTextAreaElement>;
   error: string;
   type: "checkbox" | "text" | "textarea";
   className?: string;
 }
 
-export default function Input({
+export default function Textarea({
   id,
   placeholder,
   label,
-  inputRef,
+  textAreaRef,
   error,
   type,
   className,
-}: InputProps) {
+}: TextareaProps) {
   return (
     <div class="w-full">
       <div class="">
@@ -27,11 +27,11 @@ export default function Input({
         </label>
         <span class="text-red-500 text-[11px] leading-3">{error}</span>
       </div>
-      <input
+      <textarea
         id={id}
         type={type}
-        ref={inputRef}
-        class={`w-full border border-[#151515] rounded-3xl py-3 px-4 h-11 bg-[#d9d9d9]/10 text-[#858585] text-base ${
+        ref={textAreaRef}
+        class={`w-full border border-[#151515] rounded-3xl py-3 px-4 h-52 mb-4 bg-[#d9d9d9]/10 text-[#858585] text-base${
           className && className
         }`}
         placeholder={placeholder}

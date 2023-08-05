@@ -3,6 +3,7 @@ import { Runtime } from "$store/runtime.ts";
 import type { JSX } from "preact";
 import Button from "$store/components/ui/Button.tsx";
 import Input from "$store/components/ui/Input.tsx";
+import Textarea from "$store/components/ui/Textarea.tsx";
 import RichText from "$store/components/seo/RichText.tsx";
 import type { HTML } from "deco-sites/std/components/types.ts";
 import { Section } from "$live/blocks/section.ts";
@@ -37,7 +38,7 @@ export default function Form({ title, section }: Props) {
   const infoInputRef = useRef<HTMLInputElement | null>(null);
   const guestsInputRef = useRef<HTMLInputElement | null>(null);
   const dateInputRef = useRef<HTMLInputElement | null>(null);
-  const textInputRef = useRef<HTMLInputElement | null>(null);
+  const textInputRef = useRef<HTMLTextAreaElement | null>(null);
 
   const handleSubmit: JSX.GenericEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
@@ -62,8 +63,9 @@ export default function Form({ title, section }: Props) {
             inputRef={nameInputRef}
             error={errors.value.email}
             type="text"
+            className="mb-9"
           />
-          <div class="flex">
+          <div class="flex mb-9">
             <div class="mr-6">
               <Input
                 id="phone"
@@ -92,8 +94,9 @@ export default function Form({ title, section }: Props) {
             inputRef={emailInputRef}
             error={errors.value.email}
             type="text"
+            className="mb-9"
           />
-          <div class="flex">
+          <div class="flex mb-9">
             <div class="mr-6">
               <Input
                 id="guests"
@@ -115,22 +118,22 @@ export default function Form({ title, section }: Props) {
               />
             </div>
           </div>
-          <Input
+          <Textarea
             id="text"
             label="Comentário ou Mensagem:"
             placeholder="Escreva aqui os principais pontos..."
-            inputRef={textInputRef}
+            textAreaRef={textInputRef}
             error={errors.value.whats}
-            type="text"
-            className="h-52"
+            type="textarea"
           />
-          <Button type="Submit" class="w-52 rounded-3xl bg-[#16A232]">
+          <Button
+            type="Submit"
+            class="w-52 rounded-3xl bg-[#16A232] text-lg text-white font-bold"
+          >
             Enviar
           </Button>
         </form>
-        <div class="block">
-        {renderSection(section, 500)}
-        </div>
+        <div class="block">{renderSection(section, 500)}</div>
       </div>
     </div>
   );

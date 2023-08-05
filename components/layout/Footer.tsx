@@ -18,7 +18,8 @@ export interface Props {
   pacotes: {
     title: string;
     list: links[];
-  };}
+  };
+}
 
 export interface links {
   text: string;
@@ -37,7 +38,7 @@ export default function Footer({
   const { title: titlePacotes, list: listPacotes } = pacotes;
 
   return (
-    <footer class="flex flex-col md:flex-row justify-between">
+    <footer class="flex flex-col md:flex-row justify-between bg-footer bg-[#F7F7F7] bg-no-repeat h-[950px] bg-center">
       {logo && (
         <Image
           class="self-center mx-14"

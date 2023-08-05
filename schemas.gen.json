@@ -7961,118 +7961,51 @@
       ],
       "title": "deco-sites/buffetcabana/components/ui/ContainerFlexRow.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9idWZmZXRjYWJhbmEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors": {
+    "ZGVjby1zaXRlcy9idWZmZXRjYWJhbmEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@MainColors": {
       "type": "object",
       "properties": {
+        "base-100": {
+          "type": "string",
+          "format": "color",
+          "title": "Base",
+          "default": "#FFFFFF"
+        },
         "primary": {
           "type": "string",
           "format": "color",
-          "default": "#003232",
-          "title": "Primary"
-        },
-        "primary-focus": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "format": "color",
-          "description": "Will be a darker tone of primary if not specified",
-          "title": "Primary-focus"
-        },
-        "primary-content": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "format": "color",
-          "description": "Will be a readable tone of primary if not specified",
-          "title": "Primary-content"
+          "title": "Primary",
+          "default": "#003232"
         },
         "secondary": {
           "type": "string",
           "format": "color",
-          "default": "#8C3D3D",
-          "title": "Secondary"
+          "title": "Scondary",
+          "default": "#8C3D3D"
         },
-        "secondary-focus": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "format": "color",
-          "description": "Will be a darker tone of secondary if not specified",
-          "title": "Secondary-focus"
-        },
-        "secondary-content": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "format": "color",
-          "description": "Will be a readable tone of secondary if not specified",
-          "title": "Secondary-content"
-        },
-        "accent": {
+        "tertiary": {
           "type": "string",
           "format": "color",
-          "default": "#00FF7F",
-          "title": "Accent"
-        },
-        "accent-focus": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "format": "color",
-          "description": "Will be a darker tone of accent if not specified",
-          "title": "Accent-focus"
-        },
-        "accent-content": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "format": "color",
-          "description": "Will be a readable tone of accent if not specified",
-          "title": "Accent-content"
-        },
-        "neutral": {
-          "type": "string",
-          "format": "color",
-          "default": "#333333",
-          "title": "Neutral"
-        },
-        "neutral-focus": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "format": "color",
-          "description": "Will be a darker tone of neutral if not specified",
-          "title": "Neutral-focus"
-        },
-        "neutral-content": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "format": "color",
-          "description": "Will be a readable tone of neutral if not specified",
-          "title": "Neutral-content"
-        },
-        "base-100": {
-          "type": "string",
-          "format": "color",
-          "default": "#FFFFFF",
-          "title": "Base-100"
-        },
+          "title": "Tertiary",
+          "default": "#00FF7F"
+        }
+      },
+      "required": [
+        "base-100",
+        "primary",
+        "secondary",
+        "tertiary"
+      ],
+      "title": "MainColors"
+    },
+    "ZGVjby1zaXRlcy9idWZmZXRjYWJhbmEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@BaseColorOptional": {
+      "type": "object",
+      "properties": {
         "base-200": {
           "type": [
             "string",
             "null"
           ],
           "format": "color",
-          "description": "Will be a darker tone of base-100 if not specified",
           "title": "Base-200"
         },
         "base-300": {
@@ -8081,7 +8014,6 @@
             "null"
           ],
           "format": "color",
-          "description": "Will be a darker tone of base-200 if not specified",
           "title": "Base-300"
         },
         "base-content": {
@@ -8090,194 +8022,524 @@
             "null"
           ],
           "format": "color",
-          "description": "Will be a readable tone of base-100 if not specified",
           "title": "Base-content"
-        },
-        "success": {
-          "type": "string",
-          "format": "color",
-          "default": "#EAFAF2",
-          "title": "Success"
-        },
-        "success-content": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "format": "color",
-          "description": "Will be a readable success of neutral if not specified",
-          "title": "Success-content"
-        },
-        "warning": {
-          "type": "string",
-          "format": "color",
-          "default": "#FFF8E6",
-          "title": "Warning"
-        },
-        "warning-content": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "format": "color",
-          "description": "Will be a readable tone of warning if not specified",
-          "title": "Warning-content"
-        },
-        "error": {
-          "type": "string",
-          "format": "color",
-          "default": "#FFE9E5",
-          "title": "Error"
-        },
-        "error-content": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "format": "color",
-          "description": "Will be a readable tone of error if not specified",
-          "title": "Error-content"
-        },
-        "info": {
-          "type": "string",
-          "format": "color",
-          "default": "#F0F5FF",
-          "title": "Info"
-        },
-        "info-content": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "format": "color",
-          "description": "Will be a readable tone of info if not specified",
-          "title": "Info-content"
         }
       },
-      "required": [
-        "primary",
-        "secondary",
-        "accent",
-        "neutral",
-        "base-100",
-        "success",
-        "warning",
-        "error",
-        "info"
-      ],
-      "title": "Colors"
+      "required": [],
+      "title": "BaseColorOptional"
     },
-    "ZGVjby1zaXRlcy9idWZmZXRjYWJhbmEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Miscellaneous": {
+    "ZGVjby1zaXRlcy9idWZmZXRjYWJhbmEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@PrimaryColorOptional": {
       "type": "object",
       "properties": {
-        "--rounded-box": {
+        "primary-focus": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "color",
+          "title": "Hover"
+        },
+        "primary-content": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "color",
+          "title": "Content"
+        }
+      },
+      "required": [],
+      "title": "PrimaryColorOptional"
+    },
+    "ZGVjby1zaXRlcy9idWZmZXRjYWJhbmEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@SecondaryColorOptional": {
+      "type": "object",
+      "properties": {
+        "secondary-focus": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "color",
+          "title": "Hover"
+        },
+        "secondary-content": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "color",
+          "title": "Content"
+        }
+      },
+      "required": [],
+      "title": "SecondaryColorOptional"
+    },
+    "ZGVjby1zaXRlcy9idWZmZXRjYWJhbmEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@TertiaryColorOptional": {
+      "type": "object",
+      "properties": {
+        "tertiary-focus": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "color",
+          "title": "Hover"
+        },
+        "tertiary-content": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "color",
+          "title": "Content"
+        }
+      },
+      "required": [],
+      "title": "TertiaryColorOptional"
+    },
+    "ZGVjby1zaXRlcy9idWZmZXRjYWJhbmEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@ComplementaryColors": {
+      "type": "object",
+      "properties": {
+        "base": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9idWZmZXRjYWJhbmEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@BaseColorOptional",
+          "title": "Base"
+        },
+        "primary": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9idWZmZXRjYWJhbmEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@PrimaryColorOptional",
+          "title": "Primary"
+        },
+        "secondary": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9idWZmZXRjYWJhbmEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@SecondaryColorOptional",
+          "title": "Secondary"
+        },
+        "tertiary": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9idWZmZXRjYWJhbmEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@TertiaryColorOptional",
+          "title": "Tertiary"
+        }
+      },
+      "required": [],
+      "title": "ComplementaryColors"
+    },
+    "ZGVjby1zaXRlcy9idWZmZXRjYWJhbmEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Button": {
+      "type": "object",
+      "properties": {
+        "--border-btn": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "1px",
+              "default": "1px"
+            },
+            {
+              "type": "string",
+              "const": "2px",
+              "default": "2px"
+            },
+            {
+              "type": "string",
+              "const": "3px",
+              "default": "3px"
+            },
+            {
+              "type": "string",
+              "const": "4px",
+              "default": "4px"
+            },
+            {
+              "type": "string",
+              "const": "5px",
+              "default": "5px"
+            },
+            {
+              "type": "string",
+              "const": "6px",
+              "default": "6px"
+            },
+            {
+              "type": "string",
+              "const": "7px",
+              "default": "7px"
+            },
+            {
+              "type": "string",
+              "const": "8px",
+              "default": "8px"
+            }
+          ],
           "type": "string",
-          "default": "1rem",
-          "title": "Rounded box",
-          "description": "border radius rounded-box utility class, used in card and other large boxes"
+          "default": "1px",
+          "title": "Border width"
         },
         "--rounded-btn": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "0",
+              "default": "0"
+            },
+            {
+              "type": "string",
+              "const": "0.2rem",
+              "default": "0.2rem"
+            },
+            {
+              "type": "string",
+              "const": "0.4rem",
+              "default": "0.4rem"
+            },
+            {
+              "type": "string",
+              "const": "0.8rem",
+              "default": "0.8rem"
+            },
+            {
+              "type": "string",
+              "const": "2rem",
+              "default": "2rem"
+            }
+          ],
           "type": "string",
-          "default": "0.5rem",
-          "title": "Rounded button",
-          "description": "border radius rounded-btn utility class, used in buttons and similar element"
-        },
-        "--rounded-badge": {
-          "type": "string",
-          "default": "1.9rem",
-          "title": "Rounded badge",
-          "description": "border radius rounded-badge utility class, used in badges and similar"
-        },
-        "--animation-btn": {
-          "type": "string",
-          "default": "0.25s",
-          "title": "Animation button",
-          "description": "duration of animation when you click on button"
-        },
-        "--animation-input": {
-          "type": "string",
-          "default": "0.2s",
-          "title": "Animation input",
-          "description": "duration of animation for inputs like checkbox, toggle, radio, etc"
+          "default": "0.2rem",
+          "title": "Radius",
+          "description": "Button and similar elements"
         },
         "--btn-text-case": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "normal-case",
+              "default": "normal-case"
+            },
+            {
+              "type": "string",
+              "const": "uppercase",
+              "default": "uppercase"
+            },
+            {
+              "type": "string",
+              "const": "lowercase",
+              "default": "lowercase"
+            },
+            {
+              "type": "string",
+              "const": "capitalize",
+              "default": "capitalize"
+            }
+          ],
           "type": "string",
-          "default": "uppercase",
-          "title": "Button text case",
-          "description": "set default text transform for buttons"
+          "default": "normal-case",
+          "title": "Text transform"
         },
         "--btn-focus-scale": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "0.9",
+              "default": "0.9"
+            },
+            {
+              "type": "string",
+              "const": "0.95",
+              "default": "0.95"
+            },
+            {
+              "type": "string",
+              "const": "1",
+              "default": "1"
+            },
+            {
+              "type": "string",
+              "const": "1.05",
+              "default": "1.05"
+            },
+            {
+              "type": "string",
+              "const": "1.1",
+              "default": "1.1"
+            }
+          ],
           "type": "string",
           "default": "0.95",
-          "title": "Button focus scale",
-          "description": "scale transform of button when you focus on it"
-        },
-        "--border-btn": {
-          "type": "string",
-          "default": "1px",
-          "title": "Border button",
-          "description": "border width of buttons"
-        },
-        "--tab-border": {
-          "type": "string",
-          "default": "1px",
-          "title": "Tab border",
-          "description": "border width of tabs"
-        },
-        "--tab-radius": {
-          "type": "string",
-          "default": "0.5rem",
-          "title": "Tab radius",
-          "description": "border radius of tabs"
+          "title": "Scale on click"
         }
       },
       "required": [
-        "--rounded-box",
-        "--rounded-btn",
-        "--rounded-badge",
-        "--animation-btn",
-        "--animation-input",
-        "--btn-text-case",
-        "--btn-focus-scale",
         "--border-btn",
-        "--tab-border",
-        "--tab-radius"
+        "--rounded-btn",
+        "--btn-text-case",
+        "--btn-focus-scale"
       ],
-      "title": "Miscellaneous"
+      "title": "Button"
     },
     "ZGVjby1zaXRlcy9idWZmZXRjYWJhbmEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Font": {
       "type": "object",
       "properties": {
         "fontFamily": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "None",
+              "default": "None"
+            },
+            {
+              "type": "string",
+              "const": "Alegreya",
+              "default": "Alegreya"
+            },
+            {
+              "type": "string",
+              "const": "Alegreya Sans",
+              "default": "Alegreya Sans"
+            },
+            {
+              "type": "string",
+              "const": "Archivo Narrow",
+              "default": "Archivo Narrow"
+            },
+            {
+              "type": "string",
+              "const": "BioRhyme",
+              "default": "BioRhyme"
+            },
+            {
+              "type": "string",
+              "const": "Cardo",
+              "default": "Cardo"
+            },
+            {
+              "type": "string",
+              "const": "Chivo",
+              "default": "Chivo"
+            },
+            {
+              "type": "string",
+              "const": "Cormorant",
+              "default": "Cormorant"
+            },
+            {
+              "type": "string",
+              "const": "DM Sans",
+              "default": "DM Sans"
+            },
+            {
+              "type": "string",
+              "const": "Eczar",
+              "default": "Eczar"
+            },
+            {
+              "type": "string",
+              "const": "Fira Sans",
+              "default": "Fira Sans"
+            },
+            {
+              "type": "string",
+              "const": "Inconsolata",
+              "default": "Inconsolata"
+            },
+            {
+              "type": "string",
+              "const": "Inknut Antiqua",
+              "default": "Inknut Antiqua"
+            },
+            {
+              "type": "string",
+              "const": "Inter",
+              "default": "Inter"
+            },
+            {
+              "type": "string",
+              "const": "IBM Plex Sans",
+              "default": "IBM Plex Sans"
+            },
+            {
+              "type": "string",
+              "const": "Karla",
+              "default": "Karla"
+            },
+            {
+              "type": "string",
+              "const": "Lato",
+              "default": "Lato"
+            },
+            {
+              "type": "string",
+              "const": "Libre Baskerville",
+              "default": "Libre Baskerville"
+            },
+            {
+              "type": "string",
+              "const": "Libre Franklin",
+              "default": "Libre Franklin"
+            },
+            {
+              "type": "string",
+              "const": "Lora",
+              "default": "Lora"
+            },
+            {
+              "type": "string",
+              "const": "Manrope",
+              "default": "Manrope"
+            },
+            {
+              "type": "string",
+              "const": "Merriweather",
+              "default": "Merriweather"
+            },
+            {
+              "type": "string",
+              "const": "Montserrat",
+              "default": "Montserrat"
+            },
+            {
+              "type": "string",
+              "const": "Neuton",
+              "default": "Neuton"
+            },
+            {
+              "type": "string",
+              "const": "Open Sans",
+              "default": "Open Sans"
+            },
+            {
+              "type": "string",
+              "const": "Poppins",
+              "default": "Poppins"
+            },
+            {
+              "type": "string",
+              "const": "Playfair Display",
+              "default": "Playfair Display"
+            },
+            {
+              "type": "string",
+              "const": "Proza Libre",
+              "default": "Proza Libre"
+            },
+            {
+              "type": "string",
+              "const": "PT Sans",
+              "default": "PT Sans"
+            },
+            {
+              "type": "string",
+              "const": "PT Serif",
+              "default": "PT Serif"
+            },
+            {
+              "type": "string",
+              "const": "Raleway",
+              "default": "Raleway"
+            },
+            {
+              "type": "string",
+              "const": "Roboto",
+              "default": "Roboto"
+            },
+            {
+              "type": "string",
+              "const": "Roboto Slab",
+              "default": "Roboto Slab"
+            },
+            {
+              "type": "string",
+              "const": "Rubik",
+              "default": "Rubik"
+            },
+            {
+              "type": "string",
+              "const": "Space Grotesk",
+              "default": "Space Grotesk"
+            },
+            {
+              "type": "string",
+              "const": "Space Mono",
+              "default": "Space Mono"
+            },
+            {
+              "type": "string",
+              "const": "Spectral",
+              "default": "Spectral"
+            },
+            {
+              "type": "string",
+              "const": "Source Sans Pro",
+              "default": "Source Sans Pro"
+            },
+            {
+              "type": "string",
+              "const": "Source Serif Pro",
+              "default": "Source Serif Pro"
+            },
+            {
+              "type": "string",
+              "const": "Syne",
+              "default": "Syne"
+            },
+            {
+              "type": "string",
+              "const": "Work Sans",
+              "default": "Work Sans"
+            }
+          ],
           "type": "string",
-          "default": "'Albert Sans'",
+          "title": "Font family"
+        },
+        "other": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Other"
+        }
+      },
+      "required": [],
+      "title": "Font"
+    },
+    "ZGVjby1zaXRlcy9idWZmZXRjYWJhbmEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@CustomFont": {
+      "type": "object",
+      "properties": {
+        "fontFamily": {
+          "type": [
+            "string",
+            "null"
+          ],
           "title": "Font Family"
         },
         "styleInnerHtml": {
-          "type": "string",
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "css",
           "title": "Style Inner Html"
         }
       },
-      "required": [
-        "fontFamily",
-        "styleInnerHtml"
-      ],
-      "title": "Font"
+      "required": [],
+      "title": "CustomFont"
     },
     "ZGVjby1zaXRlcy9idWZmZXRjYWJhbmEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Props": {
       "type": "object",
       "properties": {
-        "colors": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9idWZmZXRjYWJhbmEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors",
-          "title": "Colors"
+        "mainColors": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9idWZmZXRjYWJhbmEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@MainColors",
+          "title": "Main Colors"
         },
-        "miscellaneous": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9idWZmZXRjYWJhbmEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Miscellaneous",
-          "title": "Miscellaneous"
+        "complementaryColors": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9idWZmZXRjYWJhbmEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@ComplementaryColors",
+          "title": "Complementary Colors"
         },
-        "fonts": {
+        "buttonStyle": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9idWZmZXRjYWJhbmEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Button",
+          "title": "Button Style"
+        },
+        "font": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9idWZmZXRjYWJhbmEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Font",
-          "title": "Fonts"
+          "title": "Google font"
+        },
+        "customFont": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9idWZmZXRjYWJhbmEvc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@CustomFont",
+          "title": "Custom Font"
         }
       },
       "required": [],
@@ -8820,6 +9082,10 @@
     "ZGVjby1zaXRlcy9idWZmZXRjYWJhbmEvY29tcG9uZW50cy91aS9QYWNvdGVzLnRzeA==@Props": {
       "type": "object",
       "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1jeC9kZWNvL2Jsb2Nrcy9zZWN0aW9uLnRz@Section",
+          "title": "Title"
+        },
         "pacotes": {
           "type": "array",
           "items": {
@@ -8829,6 +9095,7 @@
         }
       },
       "required": [
+        "title",
         "pacotes"
       ],
       "title": "deco-sites/buffetcabana/components/ui/Pacotes.tsx@Props"
