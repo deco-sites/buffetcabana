@@ -53,7 +53,7 @@ export default function Form({ title, section }: Props) {
 
   return (
     <div class="flex flex-col container m-auto max-w-7xl ">
-      <RichText textSeo={title} />
+      <RichText textSeo={title} className="mb-[52px]" />
       <div class="flex flex-row justify-between">
         <form onSubmit={handleSubmit} class="flex flex-col">
           <Input

@@ -13,6 +13,10 @@ export default {
         "contact": "url(/background-contact.png)",
         "footer": "url(/bg-footer.png)",
       },
+      fontFamily: {
+        sans: ["Montserrat", "sans-serif"],
+        serif: ["inherit", "serif"],
+      }
     },
   },
 };
