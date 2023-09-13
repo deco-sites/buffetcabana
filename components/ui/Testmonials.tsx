@@ -13,14 +13,12 @@ export interface Testimonials {
 }
 
 export interface Props {
-  title: Section;
   testimonals: Testimonials[];
 }
 
-export default function Testimonials({ title, testimonals }: Props) {
+export default function Testimonials({testimonals }: Props) {
   return (
     <div class="container m-auto max-w-7xl mt-10">
-      {renderSection(title, 500)}
       <ul class="flex md:flex-row mt-14 gap-14">
         {testimonals.map(({ photo, name, occupation, testimonial }) => (
           <li class="flex flex-col border border-[#D9D9D9] p-6">

@@ -9057,12 +9057,31 @@
     "ZGVjby1zaXRlcy9idWZmZXRjYWJhbmEvY29tcG9uZW50cy91aS9JbnN0YWZlZWQudHN4@Props": {
       "type": "object",
       "properties": {
+        "instagram": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "title": "Name"
+            },
+            "link": {
+              "type": "string",
+              "title": "Link"
+            }
+          },
+          "required": [
+            "name",
+            "link"
+          ],
+          "title": "Instagram"
+        },
         "images": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9idWZmZXRjYWJhbmEvY29tcG9uZW50cy91aS9JbnN0YWZlZWQudHN4@Posts[]",
           "title": "Images"
         }
       },
       "required": [
+        "instagram",
         "images"
       ],
       "title": "deco-sites/buffetcabana/components/ui/Instafeed.tsx@Props"
@@ -9109,10 +9128,6 @@
     "ZGVjby1zaXRlcy9idWZmZXRjYWJhbmEvY29tcG9uZW50cy91aS9QYWNvdGVzLnRzeA==@Props": {
       "type": "object",
       "properties": {
-        "title": {
-          "$ref": "#/definitions/ZGVjby1jeC9kZWNvL2Jsb2Nrcy9zZWN0aW9uLnRz@Section",
-          "title": "Title"
-        },
         "pacotes": {
           "type": "array",
           "items": {
@@ -9122,7 +9137,6 @@
         }
       },
       "required": [
-        "title",
         "pacotes"
       ],
       "title": "deco-sites/buffetcabana/components/ui/Pacotes.tsx@Props"
@@ -9199,17 +9213,12 @@
     "ZGVjby1zaXRlcy9idWZmZXRjYWJhbmEvY29tcG9uZW50cy91aS9UZXN0bW9uaWFscy50c3g=@Props": {
       "type": "object",
       "properties": {
-        "title": {
-          "$ref": "#/definitions/ZGVjby1jeC9kZWNvL2Jsb2Nrcy9zZWN0aW9uLnRz@Section",
-          "title": "Title"
-        },
         "testimonals": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9idWZmZXRjYWJhbmEvY29tcG9uZW50cy91aS9UZXN0bW9uaWFscy50c3g=@Testimonials[]",
           "title": "Testimonals"
         }
       },
       "required": [
-        "title",
         "testimonals"
       ],
       "title": "deco-sites/buffetcabana/components/ui/Testmonials.tsx@Props"

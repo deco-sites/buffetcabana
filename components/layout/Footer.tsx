@@ -48,7 +48,9 @@ export default function Footer({
 
   return (
     <footer class="flex flex-col md:justify-center justify-between items-center bg-footer bg-no-repeat h-[950px] bg-center">
-      <div class="block mb-[92px] container m-auto max-w-7xl">{renderSection(section, 500)}</div>
+      <div class="block mb-[83px] container m-auto max-w-7xl">
+        {renderSection(section, 500)}
+      </div>
       <div class="flex flex-col md:flex-row justify-between items-start container m-auto max-w-7xl">
         {logo && (
           <Image
@@ -61,7 +63,9 @@ export default function Footer({
         )}
         <div class="flex flex-col md:flex-row justify-between">
           <div class="flex flex-col mr-16">
-            <h4 class="text-xl font-medium text-[#303030] mb-4">{titleInstitucional}</h4>
+            <h4 class="text-xl font-medium text-[#303030] mb-4">
+              {titleInstitucional}
+            </h4>
             <ul class="flex flex-col">
               {listInstitucional.map((link) => (
                 <li class="block mb-4">
@@ -77,7 +81,9 @@ export default function Footer({
             </ul>
           </div>
           <div class="flex flex-col mr-16">
-            <h4 class="text-xl font-medium text-[#303030] mb-4">{titleCardapios}</h4>
+            <h4 class="text-xl font-medium text-[#303030] mb-4">
+              {titleCardapios}
+            </h4>
             <ul class="flex flex-col">
               {listCardapios.map((link) => (
                 <li class="block mb-4">
@@ -93,7 +99,9 @@ export default function Footer({
             </ul>
           </div>
           <div class="flex flex-col mr-16">
-            <h4 class="text-xl font-medium text-[#303030] mb-4">{titlePacotes}</h4>
+            <h4 class="text-xl font-medium text-[#303030] mb-4">
+              {titlePacotes}
+            </h4>
             <ul class="flex flex-col">
               {listPacotes.map((link) => (
                 <li class="block mb-4">

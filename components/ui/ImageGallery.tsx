@@ -13,7 +13,7 @@ export interface Props {
 
 export default function ImageGallery({ images }: Props) {
   return (
-    <div class="flex container max-w-7xl justify-between items-center flex-wrap m-auto mt-24">
+    <div class="flex container max-w-7xl justify-between items-center flex-wrap m-auto mt-10">
       {images?.map((image) => (
         <img
           src={image?.srcDesktop}

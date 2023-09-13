@@ -3,14 +3,11 @@ import dev from "$live/dev.ts";
 import liveManifest from "$live/live.gen.ts";
 import liveStdManifest from "deco-sites/std/live.gen.ts";
 import tailwind from "deco-sites/std/tailwindv3.ts";
-import daisyui from "npm:daisyui@2.51.6";
 import tailwindConfig from "./tailwind.config.ts";
 
 // Start tailwind background process generation
 tailwind({
   ...tailwindConfig,
-  plugins: [daisyui],
-  daisyui: { themes: [], logs: false },
 });
 
 // Generate manifest and boot server

@@ -34,9 +34,11 @@ function GlobalTags() {
           @font-face {
             font-family: "Montserrat";
             font-display: swap;
-            src: url(${asset(
-              '/fonts/montserrat/Montserrat-Regular.ttf'
-            )}) format("truetype");
+            src: url(${
+            asset(
+              "/fonts/montserrat/Montserrat-Regular.ttf",
+            )
+          }) format("truetype");
             font-weight: 400;
             font-style: normal;
           }
@@ -44,9 +46,11 @@ function GlobalTags() {
           @font-face {
             font-family: "Montserrat";
             font-display: swap;
-            src: url(${asset(
-              '/fonts/montserrat/Montserrat-Light.ttf'
-            )}) format("truetype");
+            src: url(${
+            asset(
+              "/fonts/montserrat/Montserrat-Light.ttf",
+            )
+          }) format("truetype");
             font-weight: 300;
             font-style: normal;
           }
@@ -54,9 +58,11 @@ function GlobalTags() {
           @font-face {
             font-family: "Montserrat";
             font-display: swap;
-            src: url(${asset(
-              '/fonts/montserrat/Montserrat-LightItalic.ttf'
-            )}) format("truetype");
+            src: url(${
+            asset(
+              "/fonts/montserrat/Montserrat-LightItalic.ttf",
+            )
+          }) format("truetype");
             font-weight: 300;
             font-style: italic;
           }
@@ -64,9 +70,11 @@ function GlobalTags() {
           @font-face {
             font-family: "Montserrat";
             font-display: swap;
-            src: url(${asset(
-              '/fonts/montserrat/Montserrat-Medium.ttf'
-            )}) format("truetype");
+            src: url(${
+            asset(
+              "/fonts/montserrat/Montserrat-Medium.ttf",
+            )
+          }) format("truetype");
             font-weight: 500;
             font-style: normal;
           }
@@ -74,9 +82,11 @@ function GlobalTags() {
           @font-face {
             font-family: "Montserrat";
             font-display: swap;
-            src: url(${asset(
-              '/fonts/montserrat/Montserrat-SemiBold.ttf'
-            )}) format("truetype");
+            src: url(${
+            asset(
+              "/fonts/montserrat/Montserrat-SemiBold.ttf",
+            )
+          }) format("truetype");
             font-weight: 600;
             font-style: normal;
           }
@@ -84,13 +94,15 @@ function GlobalTags() {
           @font-face {
             font-family: "Montserrat";
             font-display: swap;
-            src: url(${asset(
-              '/fonts/montserrat/Montserrat-Bold.ttf'
-            )}) format("truetype");
+            src: url(${
+            asset(
+              "/fonts/montserrat/Montserrat-Bold.ttf",
+            )
+          }) format("truetype");
             font-weight: 700;
             font-style: normal;
           }
-          `
+          `,
         }}
       />
     </Head>
