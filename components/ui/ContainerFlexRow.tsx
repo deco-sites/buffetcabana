@@ -1,4 +1,5 @@
 import { isSection, Section } from "$live/blocks/section.ts";
+import { renderSection } from "$live/pages/LivePage.tsx";
 
 export interface Props {
   leftContent: Section;
@@ -15,8 +16,8 @@ export default function ContainerFlexRow(
         className && className
       } container m-auto max-w-7xl`}
     >
-      {leftContent}
-      {rightContent}
+      {renderSection(leftContent, 500)}
+      {renderSection(rightContent, 500)}
     </div>
   );
 }

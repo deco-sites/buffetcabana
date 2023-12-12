@@ -21,7 +21,10 @@ export default function Instafeed({ images, instagram }: Props) {
     <div class="container m-auto max-w-7xl">
       <div class="flex flex-row justify-center items-center mb-7">
         <Icon id="Instagram" size={37} class="text-center" />
-        <a href={instagram.link} class="mx-5 text-[42px] font-bold text-[#964B00]">
+        <a
+          href={instagram.link}
+          class="mx-5 text-[42px] font-bold text-[#964B00]"
+        >
           {instagram.name}
         </a>
         <p class="h-[32px] w-[37px] bg-panda bg-no-repeat bg-contain"></p>

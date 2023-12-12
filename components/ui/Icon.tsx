@@ -37,7 +37,7 @@ export type AvailableIcons =
   | "ArrowsPointingOut"
   | "Email"
   | "Panda"
-  | "Instagram"
+  | "Instagram";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**

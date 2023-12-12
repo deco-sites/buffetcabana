@@ -16,7 +16,7 @@ export interface Props {
   testimonals: Testimonials[];
 }
 
-export default function Testimonials({testimonals }: Props) {
+export default function Testimonials({ testimonals }: Props) {
   return (
     <div class="container m-auto max-w-7xl mt-10">
       <ul class="flex md:flex-row mt-14 gap-14">

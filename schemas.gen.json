@@ -9141,6 +9141,24 @@
       ],
       "title": "deco-sites/buffetcabana/components/ui/Pacotes.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9idWZmZXRjYWJhbmEvY29tcG9uZW50cy9zZW8vUmljaFRleHQudHN4@callToAction": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "title": "Label"
+        },
+        "href": {
+          "type": "string",
+          "title": "Href"
+        }
+      },
+      "required": [
+        "label",
+        "href"
+      ],
+      "title": "callToAction"
+    },
     "ZGVjby1zaXRlcy9idWZmZXRjYWJhbmEvY29tcG9uZW50cy9zZW8vUmljaFRleHQudHN4@Props": {
       "type": "object",
       "properties": {
@@ -9154,6 +9172,10 @@
             "null"
           ],
           "title": "Class Name"
+        },
+        "button": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9idWZmZXRjYWJhbmEvY29tcG9uZW50cy9zZW8vUmljaFRleHQudHN4@callToAction",
+          "title": "Button"
         }
       },
       "required": [

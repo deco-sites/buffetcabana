@@ -5,7 +5,7 @@ export interface Props {
   pacotes: string[];
 }
 
-export default function Pacotes({pacotes }: Props) {
+export default function Pacotes({ pacotes }: Props) {
   const colors = [
     "#964B00",
     "#F2B56B",
@@ -28,7 +28,8 @@ export default function Pacotes({pacotes }: Props) {
             <li
               class={`w-72 px-1 py-3 rounded-[30px] ${color} ${border} border border-2 text-center mb-12 text-xl font-semibold`}
             >
-              <span class="hidden text-[#964B00] text-[#F2B56B] text-[#303030] border-[#964B00] border-[#F2B56B] border-[#303030] "></span>
+              <span class="hidden text-[#964B00] text-[#F2B56B] text-[#303030] border-[#964B00] border-[#F2B56B] border-[#303030] ">
+              </span>
               {pacote}
             </li>
           );
