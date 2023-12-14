@@ -1,5 +1,5 @@
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
-import Image from "deco-sites/std/components/Image.tsx";
+import Image from "apps/website/components/Image.tsx";
 import { Section } from "$live/blocks/section.ts";
 import { renderSection } from "$live/pages/LivePage.tsx";
 export interface Testimonials {

@@ -1,6 +1,0 @@
-{
-  "siteId": 1788,
-  "site": "buffetcabana",
-  "namespace": "deco-sites/buffetcabana",
-  "imports": ["deco/live.gen.ts", "deco-sites/std/live.gen.ts"]
-}

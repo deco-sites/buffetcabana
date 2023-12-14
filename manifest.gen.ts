@@ -22,6 +22,7 @@ import * as $$$$$$15 from "./sections/RichText.tsx";
 import * as $$$$$$16 from "./sections/Testmonials.tsx";
 import * as $$$$$$17 from "./sections/Instafeed.tsx";
 import * as $$$$$$$$$$$0 from "./apps/site.ts";
+import * as $$$$$$$$$$$1 from "./apps/decohub.ts";
 
 const manifest = {
   "functions": {
@@ -48,6 +49,7 @@ const manifest = {
     "deco-sites/buffetcabana/sections/TextList.tsx": $$$$$$8,
   },
   "apps": {
+    "deco-sites/buffetcabana/apps/decohub.ts": $$$$$$$$$$$1,
     "deco-sites/buffetcabana/apps/site.ts": $$$$$$$$$$$0,
   },
   "name": "deco-sites/buffetcabana",
